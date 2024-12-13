@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body onload="onPageLoad()">
+        <h1>event handling example</h1>
+        <button onclick="onButtonclick()">click me</button>
+        <p id="message"></p>
+    
+<script>
+    function onPageLoad() {
+    console.log('page has loaded.');
+    document.getElementById('message').innerText='page loaded successfully!';
+}
+function onButtonclick() {
+    console.log('Button was clicked!');
+    document.getElementById('message').innerText='Button Clicked!';
+}
+</script>
+</body>
+</html>
